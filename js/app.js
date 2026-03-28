@@ -101,6 +101,17 @@ async function payWithRazorpay() {
 
                 showPaymentSuccess(response.razorpay_payment_id);
                 
+                // Track Facebook Purchase Event
+                if (typeof fbq !== 'undefined') {
+                    fbq('track', 'Purchase', {
+                        value: currentQty * BASE_PRICE,
+                        currency: 'INR',
+                        content_name: 'Ultrasonic Humidifier',
+                        content_category: 'Smart Living',
+                        num_items: currentQty
+                    });
+                }
+                
                 // WhatsApp Automation
                 const whatsappMsg = encodeURIComponent(`🎉 New Order Confirmed!\nOrder ID: ${response.razorpay_payment_id}\nProduct: Ultrasonic Humidifier\nQuantity: ${currentQty}\nTotal Amount: ₹${currentQty * BASE_PRICE}\n\nPlease ship my order soon!`);
                 setTimeout(() => window.open(`https://wa.me/918770615061?text=${whatsappMsg}`, '_blank'), 1500);
