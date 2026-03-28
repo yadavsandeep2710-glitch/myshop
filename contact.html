@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - AIBrainX</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .page-content { padding: 160px 0 100px; max-width: 800px; margin: 0 auto; }
+        .contact-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 40px; margin-top: 40px; }
+        .contact-item { margin-bottom: 30px; }
+        .contact-item h3 { font-family: var(--font-primary); color: var(--primary-light); margin-bottom: 10px; }
+        .contact-item p { color: var(--text-secondary); line-height: 1.8; }
+        .back-home { display: inline-flex; align-items: center; gap: 8px; color: var(--primary-light); font-weight: 600; margin-bottom: 20px; text-decoration: none; }
+    </style>
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '909142481937237');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=909142481937237&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+<body>
+    <nav class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/room-lifestyle.jpg" alt="AIBrainX" class="logo-img">
+                <span class="logo-text">AIBrainX</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container page-content">
+        <a href="index.html" class="back-home">← Back to Shop</a>
+        <h1 class="section-title">Contact Us</h1>
+        <p class="section-subtitle">Reach out to us for any queries, collaborations, or feedback.</p>
+
+        <div class="contact-card">
+            <div class="contact-item">
+                <h3>🏢 Office Address</h3>
+                <p>AIBrainX Innovations HQ<br>No. 45, Silicon Valley Complex, MG Road<br>Bengaluru, Karnataka - 560001</p>
+            </div>
+
+            <div class="contact-item">
+                <h3>📧 Email Address</h3>
+                <p>General Queries: hello@aibrainx.com<br>Partnerships: partner@aibrainx.com<br>Support: support@aibrainx.com</p>
+            </div>
+
+            <div class="contact-item">
+                <h3>📞 Contact Number</h3>
+                <p>Support: +91 87706 15061 (Mon-Sat, 10 AM-7 PM)<br>WhatsApp Support Available 24/7</p>
+            </div>
+
+            <div style="margin-top: 40px;">
+                <a href="https://wa.me/918770615061" target="_blank" class="btn btn-whatsapp btn-xl" style="width: 100%; justify-content: center;">
+                    💬 Instant Support on WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
